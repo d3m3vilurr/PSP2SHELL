@@ -178,6 +178,8 @@ void *msg_thread(void *unused) {
         }
 
         memset(msg, 0, SIZE_CMD);
+
+        rl_newline(0, 0);
         rl_refresh_line(0, 0);
 
         // send "ok/continue"
